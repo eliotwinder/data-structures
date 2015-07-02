@@ -40,11 +40,13 @@ describe('graph', function() {
     graph.addNode('apples');
     graph.addNode('satsumas');
     graph.addEdge('satsumas', 'apples');
-    expect(graph.hasEdge('apples', 'satsumas')).to.equal(true);
+    graph.removeEdge('satsumas', 'apples');
+    expect(graph.hasEdge('apples', 'satsumas')).to.equal(false);
   });
 
   it('should execute a callback on each node in the graph', function() {
     var connectToSatsumas = function(item) {
+      console.log(graph);
       graph.addEdge(item, 'satsumas');
     };
     graph.addNode('satsumas');
