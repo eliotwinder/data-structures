@@ -12,9 +12,7 @@ var LinkedList = function(){
     if (list.head === null) {
       list.head = item;
       list.tail = item;
-    } else if (list.head.next === null) {
-      list.head.next = item;
-    }
+    } 
 
     list.tail.next = item;
     list.tail = item; 
@@ -43,14 +41,6 @@ var LinkedList = function(){
   return list;
 };
 
-var Node = function(value){
-  var node = {};
-
-  node.value = value;
-  node.next = null;
-
-  return node;
-};
 
 /*
  * Complexity: What is the time complexity of the above functions?
