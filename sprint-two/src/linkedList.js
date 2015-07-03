@@ -41,6 +41,7 @@ var LinkedList = function(){
   return list;
 };
 
+// time complexity = O(n)
 
 /*
  * Complexity: What is the time complexity of the above functions?

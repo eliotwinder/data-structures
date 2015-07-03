@@ -38,4 +38,6 @@ treeMethods.contains = function(target){
 
 /*
  * Complexity: What is the time complexity of the above functions?
+	access complexity = n/a - we can't access a value aside from searching for it
+ 	search complexity = O(n)
  */
