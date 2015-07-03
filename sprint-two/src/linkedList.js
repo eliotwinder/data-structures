@@ -2,12 +2,12 @@ var LinkedList = function(){
   var list = {};
   list.head = null;
   list.tail = null;
-  list.count = 0;
+
   list.addToTail = function(value){
     var item = { 
       value: value,
       next: null
-    }
+    };
 
     if (list.head === null) {
       list.head = item;
@@ -20,6 +20,9 @@ var LinkedList = function(){
 
   list.removeHead = function(){
     var result = list.head;
+    if (list.head.next === null) {
+      list.tail ===null;
+    }
     list.head = list.head.next;
     return result.value;
   };
@@ -34,7 +37,7 @@ var LinkedList = function(){
         }
       }
       return false;
-    }
+    };
     return nodeContains(list.head);
   };
 

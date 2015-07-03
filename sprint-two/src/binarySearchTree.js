@@ -1,12 +1,11 @@
 var BinarySearchTree = function(value){
-	var tree = {}
+	var tree = {};
 	tree.value = value;
 	tree.left;
 	tree.right;
 	
 	tree.insert = function(value) {
 		if (this.value > value) {
-			console.log(this.left);
 			if (this.left === undefined) {
 				this.left = BinarySearchTree(value);
 			} else {
