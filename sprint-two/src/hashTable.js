@@ -8,7 +8,7 @@ HashTable.prototype.insert = function(k, v){
 
   if (this._storage.get(i) == undefined) {
   	this._storage.set(i, [[k, v]]);
-    return;
+    return; 
   }  
 
   var kIndex = -1;
