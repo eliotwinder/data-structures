@@ -75,7 +75,6 @@ var DoublyLinkedList = function(){
       list.tail = null;
       list.head = null;
     }
-
     
     if (list.tail !== null) {
       list.tail = list.tail.prev;
